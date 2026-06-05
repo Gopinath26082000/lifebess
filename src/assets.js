@@ -1,0 +1,40 @@
+export { default as logo } from "../assets/lbpl-logo.png";
+export { default as footerLogo } from "../assets/footer-lbpl-logo-cropped.png";
+export { default as homeHeroImage } from "../assets/home-hero-solar-field.png";
+export { default as homeAboutImage } from "../assets/home-about-engineer-audit.png";
+export { default as homeStrategicImage } from "../assets/home-strategic-development.png";
+export { default as homeAssetManagementImage } from "../assets/home-asset-management.png";
+export { default as homeUtilityInfrastructureImage } from "../assets/home-utility-infrastructure.png";
+export { default as homeStrategicLaptopsImage } from "../assets/home-strategic-laptops.png";
+export { default as serviceEngineeringLiaisonImage } from "../assets/service-engineering-liaison.png";
+export { default as serviceSiteFeasibilityImage } from "../assets/service-site-feasibility.png";
+export { default as serviceSolarInstallImage } from "../assets/service-solar-panel-installation.png";
+export { default as serviceTransmissionImage } from "../assets/service-transmission-infrastructure.png";
+export { default as solarEngineersInspectionImage } from "../assets/solar-engineers-inspection.png";
+export { default as productBatteryImage } from "../assets/product-battery-bank.png";
+export { default as productInverterImage } from "../assets/product-wall-inverter.png";
+export { default as productPanelsImage } from "../assets/product-solar-panels.png";
+export { default as productHeroImage } from "../assets/product-solar-cells-precision.png";
+export { default as productAccessoriesImage } from "../assets/product-solar-accessories.png";
+export { default as productHomeKitImage } from "../assets/product-solar-home-kit.png";
+export { default as productStreetLightImage } from "../assets/product-solar-street-light.png";
+export { default as productWaterHeaterImage } from "../assets/product-solar-water-heater.png";
+export { default as mountingRailImage } from "../assets/mounting-rail-detail.png";
+export { default as projectCiImage } from "../assets/project-ci-installation.png";
+export { default as projectIndustrialBessImage } from "../assets/project-industrial-bess.png";
+export { default as projectLogisticsImage } from "../assets/project-logistics-center.png";
+export { default as projectResidentialImage } from "../assets/project-residential-villa.png";
+export { default as projectRuralEstateImage } from "../assets/project-rural-estate.png";
+export { default as projectUtilityImage } from "../assets/project-utility-scale-solar.png";
+export { default as utilityLandscapeImage } from "../assets/utility-scale-landscape.png";
+export { default as buildingGlassSolarCampusImage } from "../assets/building-glass-solar-campus.png";
+export { default as residentialRooftopInstallImage } from "../assets/residential-rooftop-install.png";
+export { default as solarPanelArrayCloseupImage } from "../assets/solar-panel-array-closeup.png";
+export { default as solarRoofSunsetImage } from "../assets/solar-roof-sunset.png";
+export { default as productBessCabinetImage } from "../assets/product-bess-cabinet.png";
+export { default as serviceHeroImage } from "../assets/serviceHero.png";
+export { default as productPageHeroImage } from "../assets/Product page hero.png";
+export { default as projectHeroImage } from "../assets/Project Hero.png";
+
+
+
