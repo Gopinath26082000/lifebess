@@ -1,0 +1,29 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+
+*.log
+vite-*.log
+vite-*.err.log
+src.zip
+
+figma assets/
+figma-assets-*.png
+
+About Us - Life Bess Solar.png
+Check Eligibility Popup - Life Bess.png
+Contact Success Popup - Life Bess Solar.png
+Contact Us Popup - Life Bess Solar.png
+Eligibility Results Popup - Life Bess Solar.png
+Get a Quote - Life Bess.png
+Get a Quote - Step 2 - Life Bess.png
+Get a Quote - Step 3 - Life Bess.png
+Home - Life Bess Solar.png
+Our Projects - Life Bess.png
+Products - Life Bess Solar.png
+Request Submitted - Life Bess.png
+Residential Solar - Life Bess.png
+Services - Life Bess Solar.png
+Utility-Scale Solar - Life Bess.png
