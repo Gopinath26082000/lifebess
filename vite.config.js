@@ -4,15 +4,30 @@ import Sitemap from "vite-plugin-sitemap";
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
-  const hostname = (env.VITE_SITE_URL || "https://www.lifebess.com").replace(/\/$/, "");
+  const siteUrl = (env.VITE_SITE_URL || "https://www.lifebess.com").replace(/\/$/, "");
+  const site = new URL(siteUrl);
+  const hostname = site.origin;
+  const sitemapBasePath = site.pathname === "/" ? "" : site.pathname.replace(/\/$/, "");
+  const base = env.VITE_BASE_URL || "/";
+  const sitemapRoutes = [
+    `${sitemapBasePath}/`,
+    `${sitemapBasePath}/#about`,
+    `${sitemapBasePath}/#services`,
+    `${sitemapBasePath}/#products`,
+    `${sitemapBasePath}/#projects`,
+    `${sitemapBasePath}/#residential`,
+    `${sitemapBasePath}/#utility`
+  ];
 
   return {
+    base,
     plugins: [
       react(),
       Sitemap({
         hostname,
-        dynamicRoutes: ["/#about", "/#services", "/#products", "/#projects", "/#residential", "/#utility"],
-        exclude: ["/#quote", "/#submitted"],
+        dynamicRoutes: sitemapRoutes,
+        exclude: sitemapBasePath ? ["/"] : ["/#quote", "/#submitted"],
+        generateRobotsTxt: false,
         robots: [{ userAgent: "*", allow: "/" }]
       })
     ]
