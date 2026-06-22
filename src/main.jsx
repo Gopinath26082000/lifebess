@@ -1,5 +1,6 @@
 ﻿import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { HelmetProvider } from "react-helmet-async";
 import "./styles.css";
 import { routeSet } from "./config";
 import { Header, Footer } from "./components/layout";
@@ -15,6 +16,7 @@ import { ResidentialPage } from "./pages/ResidentialPage";
 import { UtilityPage } from "./pages/UtilityPage";
 import { QuotePage } from "./pages/QuotePage";
 import { SubmittedPage } from "./pages/SubmittedPage";
+import { Seo } from "./seo";
 
 function getRoute() {
   const route = window.location.hash.replace("#", "");
@@ -72,6 +74,7 @@ function App() {
 
   return (
     <>
+      <Seo route={route} />
       {!quoteShell && (
         <Header
           route={route}
@@ -96,5 +99,9 @@ function App() {
   );
 }
 
-createRoot(document.getElementById("root")).render(<App />);
+createRoot(document.getElementById("root")).render(
+  <HelmetProvider>
+    <App />
+  </HelmetProvider>
+);
 
