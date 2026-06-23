@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import { ArrowRight, Building, Check, CheckCircle2, Calendar, Home, MapPin, Play, ShieldCheck, Star, Users, Zap } from "lucide-react";
 import { homeHeroImage, productPanelsImage } from "../assets";
 
-function Hero({ className = "", eyebrow, title, copy, primary, secondary, onPrimary, onSecondary, sideImage, bgImage, onStoryClick }) {
+function Hero({ className = "", eyebrow, title, copy, primary, secondary, onPrimary, onSecondary, sideImage, bgImage, bgVideo, onStoryClick }) {
   const style = bgImage ? { "--hero-image": `url("${bgImage}")` } : undefined;
   return (
     <section className={`hero ${className}`} style={style}>
+      {bgVideo && <video className="hero-bg-video" src={bgVideo} autoPlay muted loop playsInline aria-hidden="true" />}
       <div className="hero-inner">
         {eyebrow && <p className="eyebrow muted">{eyebrow}</p>}
         <h1>{title}</h1>

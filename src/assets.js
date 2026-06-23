@@ -1,6 +1,7 @@
 export { default as logo } from "../assets/lbpl-logo.png";
 export { default as footerLogo } from "../assets/footer-lbpl-logo-cropped.png";
 export { default as homeHeroImage } from "../assets/home-hero-solar-field.png";
+export { default as homeHeroVideo } from "../assets/Solar energy farm.mp4";
 export { default as homeAboutImage } from "../assets/home-about-engineer-audit.png";
 export { default as homeStrategicImage } from "../assets/home-strategic-development.png";
 export { default as homeAssetManagementImage } from "../assets/home-asset-management.png";

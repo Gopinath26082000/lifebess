@@ -1,12 +1,12 @@
 import React from "react";
 import { ArrowRight, Home, ShieldCheck } from "lucide-react";
 import { DarkCta, Hero, HomeMetrics, MediaImage, SectionTitle, Stat } from "../components/ui";
-import { homeAboutImage, homeAssetManagementImage, homeHeroImage, homeStrategicImage, homeUtilityInfrastructureImage } from "../assets";
+import { homeAboutImage, homeAssetManagementImage, homeHeroImage, homeHeroVideo, homeStrategicImage, homeUtilityInfrastructureImage } from "../assets";
 
 function HomePage({ navigate }) {
   return (
     <main>
-      <Hero className="hero-home" bgImage={homeHeroImage} eyebrow="Premium Renewable Solutions" title="Your Trusted Partner in Clean & Reliable Solar Energy" copy="Life Bess is a professionally driven renewable energy company dedicated to harnessing the limitless potential of solar power for a sustainable future. With a strong foundation in engineering excellence and industry expertise, we provide end-to-end solar solutions that meet global standards of quality and performance." primary="Consult with Experts" secondary="View Our Portfolio" onPrimary={() => navigate("quote")} onSecondary={() => navigate("projects")} onStoryClick={() => navigate("about")} />
+      <Hero className="hero-home" bgVideo={homeHeroVideo} eyebrow="Premium Renewable Solutions" title="Your Trusted Partner in Clean & Reliable Solar Energy" copy="Life Bess is a professionally driven renewable energy company dedicated to harnessing the limitless potential of solar power for a sustainable future. With a strong foundation in engineering excellence and industry expertise, we provide end-to-end solar solutions that meet global standards of quality and performance." primary="Consult with Experts" secondary="View Our Portfolio" onPrimary={() => navigate("quote")} onSecondary={() => navigate("projects")} onStoryClick={() => navigate("about")} />
       <HomeMetrics />
       <section className="split-section home-about-section">
         <div className="editorial-copy">

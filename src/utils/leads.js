@@ -137,10 +137,10 @@ function buildPremiumEmailHtml({ heading, summary, params, allFieldsHtml }) {
 
   return `
     <div style="margin:0;padding:28px;background:#f4f6f8;font-family:Manrope,Arial,sans-serif;color:#101f33;">
-      <div style="max-width:720px;margin:0 auto;background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 18px 45px rgba(7,26,49,0.14);">
-        <div style="padding:26px 30px;background:#071a31;color:#ffffff;border-bottom:4px solid #ffd400;">
+      <div style="max-width:720px;margin:0 auto;background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 18px 45px rgba(0,53,90,0.14);">
+        <div style="padding:26px 30px;background:#00355a;color:#ffffff;border-bottom:4px solid #ffd51e;">
           ${params.logo_url ? `<img src="${escapeHtml(params.logo_url)}" alt="Life Bess" style="height:48px;width:auto;margin-bottom:18px;" />` : ""}
-          <div style="font-size:12px;font-weight:900;text-transform:uppercase;color:#ffd400;letter-spacing:.06em;">${escapeHtml(params.form_type)}</div>
+          <div style="font-size:12px;font-weight:900;text-transform:uppercase;color:#ffd51e;letter-spacing:.06em;">${escapeHtml(params.form_type)}</div>
           <h1 style="margin:8px 0 0;font-family:Georgia,serif;font-size:30px;line-height:1.12;color:#ffffff;">${escapeHtml(heading)}</h1>
           <p style="margin:12px 0 0;color:rgba(255,255,255,.72);font-size:15px;line-height:1.55;">${escapeHtml(summary)}</p>
         </div>
@@ -148,8 +148,8 @@ function buildPremiumEmailHtml({ heading, summary, params, allFieldsHtml }) {
           <h2 style="margin:0 0 14px;font-family:Georgia,serif;font-size:22px;color:#101f33;">Lead Snapshot</h2>
           ${allFieldsHtml}
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;">
-            ${mailLink ? `<a href="${escapeHtml(mailLink)}" style="display:inline-block;padding:12px 18px;background:#071a31;color:#ffffff;text-decoration:none;border-radius:8px;font-weight:900;">Email Customer</a>` : ""}
-            ${phoneLink ? `<a href="${escapeHtml(phoneLink)}" style="display:inline-block;padding:12px 18px;background:#ffd400;color:#071a31;text-decoration:none;border-radius:8px;font-weight:900;">Call Customer</a>` : ""}
+            ${mailLink ? `<a href="${escapeHtml(mailLink)}" style="display:inline-block;padding:12px 18px;background:#00355a;color:#ffffff;text-decoration:none;border-radius:8px;font-weight:900;">Email Customer</a>` : ""}
+            ${phoneLink ? `<a href="${escapeHtml(phoneLink)}" style="display:inline-block;padding:12px 18px;background:#ffd51e;color:#00355a;text-decoration:none;border-radius:8px;font-weight:900;">Call Customer</a>` : ""}
           </div>
         </div>
         <div style="padding:18px 30px;background:#edf0f3;color:#5f6876;font-size:12px;line-height:1.5;">
