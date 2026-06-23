@@ -4,11 +4,11 @@ import Sitemap from "vite-plugin-sitemap";
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
-  const siteUrl = (env.VITE_SITE_URL || "https://gopinath26082000.github.io/lifebess").replace(/\/$/, "");
+  const siteUrl = (env.VITE_SITE_URL || "https://lifebess.com").replace(/\/$/, "");
   const site = new URL(siteUrl);
   const hostname = site.origin;
   const sitemapBasePath = site.pathname === "/" ? "" : site.pathname.replace(/\/$/, "");
-  const base = env.VITE_BASE_URL || (mode === "production" ? "/lifebess/" : "/");
+  const base = env.VITE_BASE_URL || "/";
   const sitemapRoutes = [
     `${sitemapBasePath}/`,
     `${sitemapBasePath}/#about`,

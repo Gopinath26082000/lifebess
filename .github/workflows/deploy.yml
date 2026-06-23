@@ -17,8 +17,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      VITE_BASE_URL: /lifebess/
-      VITE_SITE_URL: https://gopinath26082000.github.io/lifebess
+      VITE_BASE_URL: /
+      VITE_SITE_URL: https://lifebess.com
     steps:
       - name: Checkout
         uses: actions/checkout@v4
