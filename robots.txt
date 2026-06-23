@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gopinath26082000.github.io/lifebess/sitemap.xml
+Sitemap: https://lifebess.com/sitemap.xml
