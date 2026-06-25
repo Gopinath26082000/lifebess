@@ -18,7 +18,13 @@ jobs:
     runs-on: ubuntu-latest
     env:
       VITE_BASE_URL: /
-      VITE_SITE_URL: https://lifebess.com
+      VITE_SITE_URL: https://www.lifebess.com
+      VITE_LOGO_URL: https://lifebess.com/assets/lbpl-logo-YY4Pou-M.png
+      VITE_EMAILJS_SERVICE_ID: service_qn6grcy
+      VITE_EMAILJS_CONTACT_TEMPLATE_ID: template_w6dtxsm
+      VITE_EMAILJS_QUOTE_TEMPLATE_ID: template_ipunzte
+      VITE_EMAILJS_PUBLIC_KEY: iDLQiT7GycfWWaT-J
+      VITE_OWNER_EMAIL: info@lifebess.com
     steps:
       - name: Checkout
         uses: actions/checkout@v4

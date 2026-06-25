@@ -4,7 +4,7 @@ import Sitemap from "vite-plugin-sitemap";
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
-  const siteUrl = (env.VITE_SITE_URL || "https://lifebess.com").replace(/\/$/, "");
+  const siteUrl = (env.VITE_SITE_URL || "https://www.lifebess.com").replace(/\/$/, "");
   const site = new URL(siteUrl);
   const hostname = site.origin;
   const sitemapBasePath = site.pathname === "/" ? "" : site.pathname.replace(/\/$/, "");

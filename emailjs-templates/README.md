@@ -5,7 +5,7 @@ The frontend is already wired through `src/utils/leads.js`. These files are the 
 ## Contact Template
 
 - Template Name: `Life Bess - Contact Inquiry`
-- Template ID placeholder: `YOUR_CONTACT_TEMPLATE_ID`
+- Template ID: `template_w6dtxsm`
 - To Email: `{{owner_email}}`
 - From Name: `Life Bess Website`
 - Reply To: `{{reply_to}}`
@@ -15,7 +15,7 @@ The frontend is already wired through `src/utils/leads.js`. These files are the 
 ## Quote Template
 
 - Template Name: `Life Bess - Solar Quote Request`
-- Template ID placeholder: `YOUR_QUOTE_TEMPLATE_ID`
+- Template ID: `template_ipunzte`
 - To Email: `{{owner_email}}`
 - From Name: `Life Bess Website`
 - Reply To: `{{reply_to}}`
@@ -25,12 +25,16 @@ The frontend is already wired through `src/utils/leads.js`. These files are the 
 ## Required .env.local
 
 ```env
-VITE_EMAILJS_SERVICE_ID=service_xxxxxxx
-VITE_EMAILJS_CONTACT_TEMPLATE_ID=template_contact_xxxxxxx
-VITE_EMAILJS_QUOTE_TEMPLATE_ID=template_quote_xxxxxxx
-VITE_EMAILJS_PUBLIC_KEY=your_public_key_xxxxxxx
+VITE_SITE_URL=https://www.lifebess.com
+VITE_LOGO_URL=https://lifebess.com/assets/lbpl-logo-YY4Pou-M.png
+VITE_EMAILJS_SERVICE_ID=service_qn6grcy
+VITE_EMAILJS_CONTACT_TEMPLATE_ID=template_w6dtxsm
+VITE_EMAILJS_QUOTE_TEMPLATE_ID=template_ipunzte
+VITE_EMAILJS_PUBLIC_KEY=iDLQiT7GycfWWaT-J
 VITE_OWNER_EMAIL=info@lifebess.com
 ```
+
+Do not add the EmailJS private key as a `VITE_` value. Vite exposes all `VITE_` variables in the browser bundle, and this frontend flow only needs the public key.
 
 ## Variables Used
 

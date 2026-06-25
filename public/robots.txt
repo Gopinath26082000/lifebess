@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lifebess.com/sitemap.xml
+Sitemap: https://www.lifebess.com/sitemap.xml

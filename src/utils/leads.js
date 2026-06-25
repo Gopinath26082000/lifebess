@@ -4,9 +4,9 @@ import {
   EMAILJS_PUBLIC_KEY,
   EMAILJS_QUOTE_TEMPLATE_ID,
   EMAILJS_SERVICE_ID,
+  LOGO_URL,
   OWNER_EMAIL
 } from "../config";
-import { logo } from "../assets";
 import { formatMoney } from "./calculations";
 
 const REQUIRED_EMAILJS_VALUES = [
@@ -106,7 +106,7 @@ function getPageMeta() {
     page_url: window.location.href,
     user_source: document.referrer || "Direct / not available",
     user_agent: window.navigator?.userAgent || "Not available",
-    logo_url: new URL(logo, window.location.origin).href
+    logo_url: LOGO_URL
   };
 }
 
@@ -254,7 +254,8 @@ async function submitLead({ type, reference, data, estimate }) {
   });
 
   if (!response.ok) {
-    throw new Error("We could not send your request right now. Please try again or call +91 70940-96012.");
+    const details = await response.text().catch(() => "");
+    throw new Error(details || "We could not send your request right now. Please try again or call +91 70940-96012.");
   }
 
   return templateParams;
